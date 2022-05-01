@@ -45,9 +45,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-Project use packages listed below:
--> 
--> 
--> 
--> 
--> 
+Project use npm packages listed below:
+-> npm install jest --global
+-> npm install --save-dev babel-jest @babel/core @babel/preset-env
+-> npm install --save-dev @babel/preset-typescript
+-> npm install --save-dev ts-jest
+-> npm install --save-dev @types/jest
