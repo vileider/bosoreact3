@@ -1,0 +1,12 @@
+.defaultButton {
+  height: 100px;
+  width: 220px;
+  padding: 10px;
+  background-color: black;
+  color: #c3833c;
+  font-size: 44px;
+  border: solid 2px;
+  border-color: #c3833c;
+  border-radius: 40px;
+}
+/*# sourceMappingURL=Buttons.css.map */
