@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Button from "./reusable_components/Button";
-import ImgPicker from "./reusable_components/ImgPicker";
+import { ImgPicker } from "./reusable_components/ImgPicker";
 //TODO check best interface name practices
 
 interface MainPageDefinition {}
@@ -12,9 +12,14 @@ export default function App(props: MainPageDefinition) {
 			<nav>
 				<Button buttonName={"Home"} />
 				<Button buttonName={"About"} />
-				<image src={ImgPicker("bosoreactprojectlogo")} alt="Logo">
-					LOGO
-				</image>
+				<img
+					className="Logotype"
+					src={
+						ImgPicker("bosoreactprojectlogo")
+						//require("./assets/images/bosoreactprojectlogo.png")
+					}
+					alt="logo"
+				/>
 				<Button buttonName={"Work"} />
 				<Button buttonName={"Contact"} />
 			</nav>
