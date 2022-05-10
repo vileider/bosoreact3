@@ -15,4 +15,7 @@ $buttonBorderColor: #c3833c;
 	border: solid 2px;
 	border-color: $buttonBorderColor;
 	border-radius: 40px;
+	&:hover {
+		cursor: pointer;
+	}
 }

@@ -6,7 +6,7 @@ interface DefinedButton {
 
 export default function Button(props: DefinedButton) {
 	const buttonName = props.buttonName;
-	const button = <button className="defaultButton ">{buttonName}</button>;
+	const button = <button className="defaultButton">{buttonName}</button>;
 
 	return button;
 }

@@ -1,28 +1,31 @@
 import React from "react";
 import "./App.css";
-import Button from "./reusable_components/Button";
-import { ImgPicker } from "./reusable_components/ImgPicker";
+import { Navbar } from "./app_components/Navbar";
+import { About } from "./app_components/About";
+
 //TODO check best interface name practices
 
 interface MainPageDefinition {}
 
 export default function App(props: MainPageDefinition) {
+	/*
+div outer container
+contains main component
+ 	div main component
+		everything els in application
+	div/
+div/
+	*/
 	const mainPage = (
-		<div className="App">
-			<nav>
-				<Button buttonName={"Home"} />
-				<Button buttonName={"About"} />
-				<img
-					className="Logotype"
-					src={
-						ImgPicker("bosoreactprojectlogo")
-						//require("./assets/images/bosoreactprojectlogo.png")
-					}
-					alt="logo"
-				/>
-				<Button buttonName={"Work"} />
-				<Button buttonName={"Contact"} />
-			</nav>
+		<div className="MainPage">
+			<div className="Layer">
+				<div className="App">
+					<nav>
+						<Navbar />
+					</nav>
+					<About />
+				</div>
+			</div>
 		</div>
 	);
 
