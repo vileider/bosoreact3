@@ -1,0 +1,54 @@
+.aboutTitle {
+  margin: auto;
+  color: #c3833c;
+  display: flex;
+  align-self: flex-start;
+  height: 20%;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+}
+
+.aboutBody {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0;
+  justify-self: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+}
+
+.aboutContent {
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c3833c;
+  background-color: #89898980;
+  justify-content: space-around;
+}
+.aboutContent .person {
+  filter: blur(2.5px);
+  cursor: pointer;
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+}
+.aboutContent .person:hover {
+  filter: blur(1px);
+}
+.aboutContent .person .photo {
+  display: flex;
+  align-content: center;
+  border: solid 2px;
+  border-color: #c3833c;
+  border-radius: 20px;
+  width: 25vh;
+  height: 30vh;
+  background-size: cover;
+  background-image: url("../../assets/images/personImg/blondeGirl.jpg");
+}

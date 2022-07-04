@@ -1,0 +1,59 @@
+@import "../../reusable_styles/ColorPalette.scss";
+@import "../../reusable_styles/FontsStyles.scss";
+
+.feedbackTitle {
+	@include title;
+}
+
+.feedbackBody {
+	display: flex;
+	flex-direction: column;
+	margin: 2% 0;
+	justify-self: center;
+	width: 100%;
+	height: 50vh;
+	justify-content: center;
+
+	.feedbackWindow {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: flex-end;
+		flex-direction: column;
+		border-radius: 20px;
+		border: 1px solid $primaryColor;
+
+		.feedbackCards {
+			display: flex;
+			margin: 20px 20px;
+			border-radius: 20px;
+			background-color: $secondaryColor;
+			justify-content: center;
+			align-items: center;
+			height: 80%;
+			width: 90%;
+			align-self: center;
+			.feedCard {
+				margin: 100px;
+				width: 400px;
+				height: 80%;
+				background-color: white;
+				border-radius: 20px;
+				.profilePhoto {
+					height: 50%;
+					width: 100%;
+					background-image: url("../../assets/images/bosoreactprojectlogo.png");
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+				.feedText {
+					width: auto;
+					height: auto;
+					margin: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

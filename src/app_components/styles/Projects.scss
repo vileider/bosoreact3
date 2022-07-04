@@ -1,0 +1,53 @@
+@import "../../reusable_styles/ColorPalette.scss";
+@import "../../reusable_styles/FontsStyles.scss";
+@import "../../reusable_styles/BackgroundGlow.scss";
+
+.projectTitle {
+	@include title;
+}
+
+.projectBody {
+	display: flex;
+	margin: 2% 0;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.projectsSlider {
+		align-items: center;
+		display: flex;
+		margin: auto;
+		color: $primaryColor;
+
+		.project {
+			cursor: pointer;
+			height: 30vh;
+			width: 30vh;
+			margin-inline: 50px;
+			background-color: $blurWindow;
+			border: 1px solid $primaryColor;
+		}
+
+		.arrow {
+			display: flex;
+			align-self: center;
+			width: 20vh;
+			height: 15vh;
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			background-image: $glow;
+			border-radius: 20px;
+			cursor: pointer;
+			background-color: $blurWindow;
+			border: 1px solid $primaryColor;
+		}
+
+		.left {
+			transform: rotate(-90deg);
+		}
+
+		.right {
+			transform: rotate(90deg);
+		}
+	}
+}

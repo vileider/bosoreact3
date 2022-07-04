@@ -1,0 +1,92 @@
+.backgroundGlow {
+  background: radial-gradient(circle at top 15% right 25%, #ffa9495c 20%, #89898980 50%) no-repeat top;
+  background-position: right;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.projectTitle {
+  margin: 50px auto;
+  color: #c3833c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: 20%;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4em;
+}
+
+.projectBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2% 0;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectBody .projectsSlider {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  color: #c3833c;
+}
+
+.projectBody .projectsSlider .project {
+  cursor: pointer;
+  height: 30vh;
+  width: 30vh;
+  margin-inline: 50px;
+  background-color: #89898980;
+  border: 1px solid #c3833c;
+}
+
+.projectBody .projectsSlider .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 20vh;
+  height: 15vh;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-image: radial-gradient(circle at top 15% right 25%, #ffa9495c 20%, #89898980 50%);
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #89898980;
+  border: 1px solid #c3833c;
+}
+
+.projectBody .projectsSlider .left {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.projectBody .projectsSlider .right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/*# sourceMappingURL=Projects.css.map */

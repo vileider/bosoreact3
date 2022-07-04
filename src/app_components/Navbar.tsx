@@ -1,5 +1,6 @@
 import Button from "../reusable_components/Button";
 import { ImgPicker } from "../reusable_components/ImgPicker";
+import "./styles/Navbar.css";
 
 export function Navbar() {
 	const header = (
@@ -7,7 +8,7 @@ export function Navbar() {
 			<Button buttonName={"Home"} />
 			<Button buttonName={"About"} />
 			<img
-				className="Logotype"
+				className="logotype"
 				src={ImgPicker("bosoreactprojectlogo")}
 				alt="logo"
 			/>

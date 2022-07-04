@@ -1,0 +1,49 @@
+.footerBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 2% 0;
+  color: #c3833c;
+  height: 400px;
+  width: 100%;
+}
+
+.footerBody .footerIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid #c3833c;
+  background-color: #89898980;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.footerBody .footerIcons .socialIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.footerBody .credits {
+  margin: 20px 0;
+  font-size: 36px;
+}
+/*# sourceMappingURL=Footer.css.map */
