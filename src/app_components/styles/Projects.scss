@@ -19,6 +19,7 @@
 		display: flex;
 		margin: auto;
 		color: $primaryColor;
+		overflow-x: auto;
 
 		.project {
 			cursor: pointer;
@@ -29,25 +30,25 @@
 			border: 1px solid $primaryColor;
 		}
 
-		.arrow {
-			display: flex;
-			align-self: center;
-			width: 20vh;
-			height: 15vh;
-			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-			background-image: $glow;
-			border-radius: 20px;
-			cursor: pointer;
-			background-color: $blurWindow;
-			border: 1px solid $primaryColor;
-		}
+		// .arrow {
+		// 	display: flex;
+		// 	align-self: center;
+		// 	width: 20vh;
+		// 	height: 15vh;
+		// 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+		// 	background-image: $glow;
+		// 	border-radius: 20px;
+		// 	cursor: pointer;
+		// 	background-color: $blurWindow;
+		// 	border: 1px solid $primaryColor;
+		// }
 
-		.left {
-			transform: rotate(-90deg);
-		}
+		// .left {
+		// 	transform: rotate(-90deg);
+		// }
 
-		.right {
-			transform: rotate(90deg);
-		}
+		// .right {
+		// 	transform: rotate(90deg);
+		// }
 	}
 }

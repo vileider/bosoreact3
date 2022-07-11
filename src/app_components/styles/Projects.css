@@ -52,6 +52,7 @@
   display: flex;
   margin: auto;
   color: #c3833c;
+  overflow-x: auto;
 }
 
 .projectBody .projectsSlider .project {
@@ -61,32 +62,5 @@
   margin-inline: 50px;
   background-color: #89898980;
   border: 1px solid #c3833c;
-}
-
-.projectBody .projectsSlider .arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 20vh;
-  height: 15vh;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-image: radial-gradient(circle at top 15% right 25%, #ffa9495c 20%, #89898980 50%);
-  border-radius: 20px;
-  cursor: pointer;
-  background-color: #89898980;
-  border: 1px solid #c3833c;
-}
-
-.projectBody .projectsSlider .left {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-.projectBody .projectsSlider .right {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 /*# sourceMappingURL=Projects.css.map */
