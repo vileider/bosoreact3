@@ -1,7 +1,9 @@
 import "./styles/Projects.css";
 import "../reusable_styles/BackgroundGlow.css";
+import { useState } from "react";
 
 export function Projects() {
+  const [traceState, setTraceState] = useState<any>();
   const mouseTraceLog = (x: any) => {
     console.log(x.clientX - x.target.offsetLeft);
   };
@@ -13,13 +15,14 @@ export function Projects() {
         {/* <div className="arrow left "></div> */}
         <div
           className="project backgroundGlow"
-          onClick={(event: any) => mouseTraceLog(event)}
+          // onClick={(event: any) => mouseTraceLog(event)}
           onDrag={(event: any) => {
-            event.target.clientWidth = event.clientX - event.target.offsetLeft;
+            setTraceState(event.clientX - event.target.offsetLeft);
+            event.target.offsetLeft = traceState;
+            mouseTraceLog(event);
           }}
         >
-          {" "}
-          1st
+          s{traceState}
         </div>
         <div className="project backgroundGlow"> 2nd</div>
         <div className="project backgroundGlow"> 3rd</div>
