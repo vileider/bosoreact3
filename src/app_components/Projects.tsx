@@ -5,7 +5,8 @@ import { useState } from "react";
 export function Projects() {
   const [traceState, setTraceState] = useState<any>();
   const mouseTraceLog = (x: any) => {
-    console.log(x.clientX - x.target.offsetLeft);
+    //console.log(x.clientX - x.target.offsetLeft);
+    console.log(x);
   };
 
   const body = (
@@ -17,10 +18,11 @@ export function Projects() {
           className="project backgroundGlow"
           // onClick={(event: any) => mouseTraceLog(event)}
           onDrag={(event: any) => {
-            setTraceState(event.clientX - event.target.offsetLeft);
-            event.target.offsetLeft = traceState;
+            setTraceState(event.pageX - 78);
+            // event.target.offsetLeft = traceState;
             mouseTraceLog(event);
           }}
+          style={{ position: "relative", left: `${traceState}px` }}
         >
           s{traceState}
         </div>
