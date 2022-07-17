@@ -1,37 +1,38 @@
 import "./styles/Projects.css";
 import "../reusable_styles/BackgroundGlow.css";
 import { useState } from "react";
+import Carousel from "nuka-carousel";
 
 export function Projects() {
-  const [traceState, setTraceState] = useState<any>();
-  const mouseTraceLog = (x: any) => {
-    //console.log(x.clientX - x.target.offsetLeft);
-    console.log(x);
-  };
-
   const body = (
     <div className="projectBody">
       <div className="projectTitle">Our Projects</div>
+
       <div className="projectsSlider">
-        {/* <div className="arrow left "></div> */}
-        <div
-          className="project backgroundGlow"
-          // onClick={(event: any) => mouseTraceLog(event)}
-          onDrag={(event: any) => {
-            setTraceState(event.pageX - 78);
-            // event.target.offsetLeft = traceState;
-            mouseTraceLog(event);
-          }}
-          style={{ position: "relative", left: `${traceState}px` }}
-        >
-          s{traceState}
-        </div>
+      <Carousel
+    wrapAround={true}
+    slidesToShow={3}>
+        <div className="project backgroundGlow"> 1st</div>
         <div className="project backgroundGlow"> 2nd</div>
         <div className="project backgroundGlow"> 3rd</div>
-        {/* <div className="arrow right"></div> */}
-      </div>
+        <div className="project backgroundGlow"> 4rd</div>
+        <div className="project backgroundGlow"> 5rd</div>
+        </Carousel> 
+        </div>
     </div>
   );
+
+  // <Carousel
+  //   wrapAround={true}
+  //   slidesToShow={3}
+  // >
+  //   <img src="/image1.png" />
+  //   <img src="/image2.png" />
+  //   <img src="/image3.png" />
+  //   <img src="/image4.png" />
+  //   <img src="/image5.png" />
+  // </Carousel> 
+
 
   return body;
 }
