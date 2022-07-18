@@ -15,11 +15,27 @@
 	flex-direction: column;
 
 	.projectsSlider {
-		align-items: center;
-		display: flex;
-		margin: auto;
-		color: $primaryColor;
-		overflow-x: auto;
+		background: black;
+    width: 80%;
+    padding: 3em;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    color: #c3833c;
+    overflow: hidden;
+		.slider-container {
+			position: relative;
+			width: 100%;
+			img {
+				margin-inline: 50px;
+				width: 30vh;
+				height: 30vh;
+			}
+			
+			
+		}
+
 
 		.project {
 			cursor: pointer;
@@ -28,6 +44,7 @@
 			margin-inline: 50px;
 			background-color: $blurWindow;
 			border: 1px solid $primaryColor;
+			
 		}
 
 		// .arrow {

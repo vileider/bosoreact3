@@ -11,13 +11,18 @@ export function Projects() {
       <div className="projectsSlider">
       <Carousel
     wrapAround={true}
-    slidesToShow={3}>
-        <div className="project backgroundGlow"> 1st</div>
+          slidesToShow={3}>
+           <img onClick={() => {console.log("image clicked")}} src={require("../assets/images/personImg/blondeGirl.jpg")} alt="blonde" />
+          <img onClick={() => {console.log("image clicked")}} src={require("../assets/images/personImg/blondeGirl.jpg")} alt="blonde" />
+          <img onClick={() => {console.log("image clicked")}} src={require("../assets/images/personImg/blondeGirl.jpg")} alt="blonde" />
+          <img src={require("../assets/images/personImg/blondeGirl.jpg")} alt="blonde" />
+          <img src={require("../assets/images/personImg/blondeGirl.jpg")} alt="blonde" /> 
+        {/* <div className="project backgroundGlow"> <img onClick={() => {console.log("image clicked")}} src={require("../assets/images/personImg/blondeGirl.jpg")} alt="blonde" /> </div>
         <div className="project backgroundGlow"> 2nd</div>
         <div className="project backgroundGlow"> 3rd</div>
         <div className="project backgroundGlow"> 4rd</div>
-        <div className="project backgroundGlow"> 5rd</div>
-        </Carousel> 
+  <div className="project backgroundGlow"> 5rd</div> */}
+        </Carousel>  
         </div>
     </div>
   );

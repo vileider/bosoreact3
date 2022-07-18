@@ -44,6 +44,10 @@
 }
 
 .projectBody .projectsSlider {
+  background: black;
+  width: 80%;
+  padding: 3em;
+  border-radius: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -52,7 +56,18 @@
   display: flex;
   margin: auto;
   color: #c3833c;
-  overflow-x: auto;
+  overflow: hidden;
+}
+
+.projectBody .projectsSlider .slider-container {
+  position: relative;
+  width: 100%;
+}
+
+.projectBody .projectsSlider .slider-container img {
+  margin-inline: 50px;
+  width: 30vh;
+  height: 30vh;
 }
 
 .projectBody .projectsSlider .project {
